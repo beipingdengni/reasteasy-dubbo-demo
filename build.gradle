@@ -2,7 +2,7 @@ subprojects {
 
     apply plugin: 'java'
     apply plugin: 'maven'
-    apply plugin: 'application'
+//    apply plugin: 'application'
     apply plugin: 'war'
 
     group 'com.tian'
@@ -71,6 +71,8 @@ subprojects {
     }
 
     dependencies {
+
+        compile group: 'org.jboss.resteasy', name: 'resteasy-servlet-initializer', version: '3.6.0.Final'
 
         compile 'org.projectlombok:lombok:1.16.8'
 
