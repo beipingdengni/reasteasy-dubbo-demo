@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%highlight{%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n}{FATAL=white, ERROR=red, WARN=blue, INFO=black, DEBUG=green, TRACE=blue}" />
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <!-- 下面是打印通过log4j2打印出mybatis语句的配置-->
+    <logger name="com.tian" additivity="true">
+      <level>DEBUG</level>
+    </logger>
+
+    <Root level="INFO">
+      <AppenderRef ref="Console" />
+    </Root>
+
+  </Loggers>
+</Configuration>

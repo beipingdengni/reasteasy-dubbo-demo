@@ -1,0 +1,7 @@
+rootProject.name = 'reasteasy-dubbo-demo'
+
+include 'dubbo-service-api'
+include 'dubbo-service-consumer'
+include 'dubbo-service-common'
+include 'dubbo-service-provider'
+
