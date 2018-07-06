@@ -72,17 +72,16 @@ subprojects {
 
     dependencies {
 
-        compile group: 'org.jboss.resteasy', name: 'resteasy-servlet-initializer', version: '3.6.0.Final'
-
         compile 'org.projectlombok:lombok:1.16.8'
 
         compile 'org.springframework:spring-core:4.2.5.RELEASE'
-        compile 'org.springframework:spring-context-support:4.2.5.RELEASE'
         compile 'org.springframework:spring-beans:4.2.5.RELEASE'
+        compile 'org.springframework:spring-context:4.2.5.RELEASE'
+        compile 'org.springframework:spring-context-support:4.2.5.RELEASE'
         compile 'org.springframework:spring-oxm:4.2.5.RELEASE'
         compile "org.springframework:spring-jms:4.2.5.RELEASE"
+        compile "org.springframework:spring-web:4.2.5.RELEASE"
         compile 'org.springframework.retry:spring-retry:1.1.2.RELEASE'
-        compile 'org.springframework:spring-context:4.2.5.RELEASE'
 
         compile 'org.aspectj:aspectjrt:1.8.7'
         compile 'org.aspectj:aspectjweaver:1.8.7'
@@ -96,8 +95,11 @@ subprojects {
         compile 'org.apache.commons:commons-pool2:2.4.2'
 
         compile 'org.slf4j:slf4j-api:1.7.15'
-        compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.5'
-        compile 'org.apache.logging.log4j:log4j-core:2.5'
+        compile 'org.slf4j:jcl-over-slf4j:1.7.15'
+        compile 'org.slf4j:log4j-over-slf4j:1.7.15'
+        compile 'org.apache.logging.log4j:log4j-slf4j-impl:2.11.0'
+        compile 'org.apache.logging.log4j:log4j-core:2.11.0'
+        compile 'org.apache.logging.log4j:log4j-api:2.11.0'
 
         compile 'mysql:mysql-connector-java:5.1.35'
         compile 'com.alibaba:druid:1.0.12'

@@ -1,21 +1,16 @@
-package com.tian.service.provider.common;
+package com.tian.service.common.interceptor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.tian.service.common.res.DataResult;
 
 import javax.ws.rs.WebApplicationException;
-import javax.ws.rs.ext.Provider;
 import javax.ws.rs.ext.WriterInterceptor;
 import javax.ws.rs.ext.WriterInterceptorContext;
 import java.io.IOException;
 
-/**
- * create date 18/3/30 and user adm
- * tian bei ping
- */
-//@Provider
 public class JsonFilterWriteInterceptor implements WriterInterceptor {
 
-    private CommonResponse<String> response = new CommonResponse<>(200, "fail", "ces===haha");
+    private DataResult<String> response = new DataResult<>(200, "fail", "ces===haha");
 
     @Override
     public void aroundWriteTo(WriterInterceptorContext context) throws IOException, WebApplicationException {

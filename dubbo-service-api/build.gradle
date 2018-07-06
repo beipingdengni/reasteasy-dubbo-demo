@@ -1,20 +1,20 @@
 
 
-def artifactId="dubbo-service-api"
-dependencies {
+//def artifactId="dubbo-service-api"
+//dependencies {
 //    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
+//}
 
 
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: "http://nexus.mwbyd.cn/nexus/content/repositories/jichu-snapshots/") {
-                authentication(userName: "9now", password: "9now123")
-            }
-            pom.version = "$project.version"
-            pom.artifactId = "$artifactId"
-            pom.groupId = "$project.group"
-        }
-    }
-}
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: "http://nexus.mwbyd.cn/nexus/content/repositories/jichu-snapshots/") {
+//                authentication(userName: "9now", password: "9now123")
+//            }
+//            pom.version = "$project.version"
+//            pom.artifactId = "$artifactId"
+//            pom.groupId = "$project.group"
+//        }
+//    }
+//}
